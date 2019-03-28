@@ -1,6 +1,7 @@
 # Matlab Code Run Extension for VS Code
 
 Run Matlab code straight from VS Code!
+*Currently only tested on Mac OS, but it will probably also work on Linux. Due to how Matlab runs on Windows, I am uncertain whether this would also work on Windows systems. Feedback on this would be great!*
 
 ## Features
 
