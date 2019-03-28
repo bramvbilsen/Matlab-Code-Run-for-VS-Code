@@ -2,6 +2,8 @@
 
 Run Matlab code straight from VS Code!  
 
+***This plugin is currently under development and has not yet been tested extensively. If there are any issues, feel free to open an issue in the Github repo!***
+
 *Currently only tested on Mac OS, but it will probably also work on Linux. Due to how Matlab runs on Windows, I am uncertain whether this would also work on Windows systems. Feedback on this would be great!*
 
 ## Features
