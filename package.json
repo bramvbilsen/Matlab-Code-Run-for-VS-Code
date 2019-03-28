@@ -3,6 +3,7 @@
 	"displayName": "Matlab Code Run",
 	"description": "Enables code execution in VS Code via integrated terminal",
 	"version": "1.0.0",
+	"publisher": "Bram Vanbilsen",
 	"engines": {
 		"vscode": "^1.32.0"
 	},
