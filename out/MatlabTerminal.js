@@ -16,6 +16,10 @@ class MatlabTerminal {
             vscode.window.showInformationMessage("File not found in workspace!");
             return;
         }
+        if (!absFilePath.endsWith(".m")) {
+            vscode.window.showInformationMessage("Trying to run a non-Matlab file!");
+            return;
+        }
         const relativeFilePath = "." + absFilePath.replace(this.workspaceDirectoryPath, "");
         if (!this.hasExecutedOnce) {
             this.terminal.sendText(`${this.matlabCommand} ${this.noSplashArg} ${this.noDesktopArg} -sd ${this.workspaceDirectoryPath} -r "run('${relativeFilePath}');"`);
