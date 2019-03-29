@@ -6,6 +6,10 @@ Run Matlab code straight from VS Code!
 
 *Currently only tested on Mac OS, but it will probably also work on Linux. Due to how Matlab runs on Windows, I am uncertain whether this would also work on Windows systems. Feedback on this would be great!*
 
+## How To Use
+
+Open the command palette (under "View" or with shortcut ctr+shift+p) and find the "Run Matlab File" command.
+
 ## Features
 
 Running code straight from VS Code without having to open the full Matlab GUI. Non graphical output will be displayed in the built-in VS Code terminal. Graphs will be openend in a separate window. Debugging is not available and that'll probably not change in the foreseeable future as the current implementation does not allow for this.
