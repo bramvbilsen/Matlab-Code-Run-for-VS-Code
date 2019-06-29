@@ -30,7 +30,11 @@ export default class MatlabTerminal {
             this.terminal.sendText(`${this.matlabCommand} ${this.noSplashArg} ${this.noDesktopArg} -sd ${this.workspaceDirectoryPath} -r "run('${relativeFilePath}');"`);
             this.hasExecutedOnce = true;
         } else {
-            this.terminal.sendText(`run('${relativeFilePath}')`);
+            if (process.platform === 'win32') {
+                this.terminal.sendText(`${this.matlabCommand} ${this.noSplashArg} ${this.noDesktopArg} -r "run('${relativeFilePath}');"`);
+            } else {
+                this.terminal.sendText(`${rerun}run('${relativeFilePath}')`);
+            }
         }
         this.terminal.show(true);
     }
