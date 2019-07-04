@@ -33,7 +33,7 @@ export default class MatlabTerminal {
             if (process.platform === 'win32') {
                 this.terminal.sendText(`${this.matlabCommand} ${this.noSplashArg} ${this.noDesktopArg} -r "run('${relativeFilePath}');"`);
             } else {
-                this.terminal.sendText(`${rerun}run('${relativeFilePath}')`);
+                this.terminal.sendText(`run('${relativeFilePath}')`);
             }
         }
         this.terminal.show(true);
